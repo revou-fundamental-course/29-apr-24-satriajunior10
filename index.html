@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">Satria Junior Travel</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#our-package">Our Package</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Welcome to Satria Junior travel</h1>
+            <p>Your trusted Agent.</p>
+            <p>Your happiness is our happiness.</p>
+        </section>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="img-slideshow" src="https://png.pngtree.com/background/20230606/original/pngtree-yosemite-national-park-scenic-view-hd-wallpapers-picture-image_2881436.jpg" width="1000" height="600" />
+            </div>
+            <div class="mySlides fade">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/744/875/623/sky-cloud-trees-pine-wallpaper-preview.jpg" alt="" width="1000" height="500">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://image.danautoba.co.id/2023/09/Tempat-Wisata-Baru-di-Danau-Toba-min.jpg" alt="" width="1000" height="500">
+            </div>
+        </div>
+        <br><br>
+        
+        <button class="prev" onclick="plusDivs(-1)">Previous</button><br>
+        <button class="next" onclick="plusDivs(1)">Next</button>
+
+        <script>
+            // JavaScript 
+            var slideIndex = 1;
+            showSlides(slideIndex);
+        
+            // Next/previous controls
+            function plusDivs(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) { slideIndex = 1; }
+                if (n < 1) { slideIndex = slides.length; }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+        
+                // Adjust image responsiveness
+                var images = slides[slideIndex - 1].getElementsByTagName("img");
+                for (i = 0; i < images.length; i++) {
+                    images[i].style.width = "100%";
+                    images[i].style.height = "auto";
+                }
+            }
+        </script>
+        
+        
+        <h1>Vacations become fun with our travel!</h1>
+
+       
+        
+        <section id="contact-us">
+            <h1>Contact Us</h1>
+            <p>@Satriamangasijunior@gmail.com</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="question">question:</label>
+                <input type="text" id="question" name="question"><br><br>
+                <input type="submit" value="Send">
+                
+            </form>
+        </section>
+        
+        <section id="our-package">
+            <h1>Our Package</h1>
+            <p>This is our package page.</p>
+        </section>
+        <header>
+            <h1>VACATION</h1>
+        </header>
+    
+        <section class="packages">
+            <div class="package">
+                <img src="https://cdn.idntimes.com/content-images/community/2019/07/1563516709410188-16609c8882fa6dd2141d390a82b8505a_600x400.jpg" alt="">
+                <h2>Hawai Package</h2>
+                <p>United States</p>
+                <p>lei flower. This flower is usually given to someone to welcome a guest of honor, a symbol of peace, love and friendship.</p>
+                <div class="details">
+                    <a href="#">DETAILS</a>
+                </div>
+                <span class="price">Starting from Rp.30.000.000</span>
+            </div>
+    
+            <div class="package">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMYAkjl1u_eCO1bxqH0EvA8Lcr-GyIBQ8MT59vnILFQ&s" alt="">
+                <h2>Japan Package</h2>
+                <p>The Delights of Culinary Tourism</p>
+                <p>known for its technological innovations,such as robots,advanced electronic devices,and ever-evolving trends.</p>
+                <div class="details">
+                    <a href="#">DETAILS</a>
+                </div>
+                <span class="price">Starting from Rp.20.000.000</span>
+            </div>
+    
+            <div class="package">
+                <img src="https://keystoneacademic-res.cloudinary.com/image/upload/f_auto/q_auto/g_auto/c_fill/w_1280/element/11/110854_shutterstock_1037552143.jpg" alt="">
+                <h2>Australia Package</h2>
+                <p>20 UNESCO World Heritage Sites</p>
+                <p>Their world heritage is recognized by UNESCO. The interesting fact is that there are 20 recognized sites</p>
+                <div class="details">
+                    <a href="#">DETAILS</a>
+                </div>
+                <span class="price">Starting from Rp.40.000.000</span>
+            </div>
+        </section>
+
+        
+        <div>
+            <div class="benefit"></div>
+            <h1>WHY MUST US?</h1>
+            <p>1. No need to make an itinerary<br>
+                2. Easy to Reschedule Schedule<br>
+                3. Time and Energy Efficiency<br>
+                4. Cheaper than other travel</p>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <h1>Thank you for trusting us as the best travel agent</h1>
+            <p>If you have questions please use the button below</p>
+            <a href="#" class="call-to-action">MORE INFORMATION</a>
+            <div class="footer">
+              <p>Satria Junior travel</p>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

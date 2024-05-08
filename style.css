@@ -1,0 +1,272 @@
+/* CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+ 
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#contact-form label {
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 400px; 
+}
+
+.mySlides.fade {
+  display: none;
+  width: 1000px; 
+  height: 100%; 
+}
+
+.img-slideshow {
+  width: 1000px; 
+  height: 200px; 
+  object-fit: cover;
+}
+
+
+/* CSS for responsive navbar */
+@media screen and (max-width: 768px) {
+
+  
+
+
+
+  .logo {
+    margin-right: auto; 
+    margin-left: 100px; 
+    text-align: center; 
+    margin-bottom:40px;
+    
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    width:100%;
+    align-items: flex-start;
+    
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+ 
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+
+  .mySlides.fade {
+    width: 100%;
+    height: 150px;
+  }
+
+  .img-slideshow {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Penambahan CSS untuk packages */
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-left:10px;
+  margin-right:20px;
+}
+
+.package {
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left:100px;
+  margin-right:80px;
+
+}
+
+.package img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.package h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.package p {
+  margin: 0 10px;
+  line-height: 1.6;
+}
+
+.details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.details a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.price {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.container {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.call-to-action {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
