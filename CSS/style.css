@@ -111,7 +111,7 @@ section {
 
 
 /* CSS for responsive navbar */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   
 
@@ -152,7 +152,7 @@ section {
 }
 
 /* Media queries for mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .slideshow-container {
     width: 100%;
     max-width: 100%;
