@@ -17,6 +17,6 @@ function validation() {
         alert("Please fill in all fields.");
     } else {
         // Redirect ke halaman awal jika formulir tervalidasi
-        window.location.href = "index.html"; // Ganti "index.html" dengan halaman awal Anda
+        window.location.href = "index.html"; 
     }
 }
